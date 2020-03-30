@@ -1,9 +1,8 @@
 const Submit = document.getElementById("btn");
 const NumberInput = document.getElementById("input");
 
-displayFirstNPrimeNumbers = N => {
-  console.log("num", N);
-  let arrayOfPrimeNumbers = [];
+displayFirstNPrimeNumbers = N => { 
+  let arrayOfPrimeNumbers= [];
   let isPrimeNumber;
   let i = 0;
   while (arrayOfPrimeNumbers.length < N) {
