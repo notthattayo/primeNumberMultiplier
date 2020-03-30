@@ -1,0 +1,23 @@
+
+#table {
+  
+    margin: 20px auto;
+    
+
+  }
+
+  #table tr td{
+    border: 1px solid black;
+    padding: 3px;
+  }
+  
+  #input{
+      padding:5px;
+      border: 1px solid black;
+  }
+
+  #btn{
+    color:white;
+    background-color: red;
+    padding: 5px;
+  }
