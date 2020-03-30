@@ -2,7 +2,6 @@ const Submit = document.getElementById("btn");
 const NumberInput = document.getElementById("input");
 
 displayFirstNPrimeNumbers = N => {
- console.time()
   console.log("num", N);
   let arrayOfPrimeNumbers = [];
   let isPrimeNumber;
@@ -24,18 +23,15 @@ displayFirstNPrimeNumbers = N => {
   }
   console.log(arrayOfPrimeNumbers);
   printArray(arrayOfPrimeNumbers);
-  console.timeEnd()
 };
 
 NumberInput.addEventListener("keypress", function(e) {
   if (e.key === "Enter") {
-    console.log(NumberInput.value);
     displayFirstNPrimeNumbers(NumberInput.value);
   }
 });
 
 Submit.addEventListener("click", function() {
-  console.log(NumberInput.value);
   displayFirstNPrimeNumbers(NumberInput.value);
 });
 
@@ -54,7 +50,6 @@ function printArray(arr) {
     output += "</tr>";
   });
   output += `</table>`;
-  console.log(output);
   document.getElementById("table").innerHTML = output;
 }
 
