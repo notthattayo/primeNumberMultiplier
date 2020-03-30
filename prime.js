@@ -9,7 +9,6 @@ displayFirstNPrimeNumbers = N => {
     isPrimeNumber = true;
     if (i > 1) {
       for (var j = 2; j < i; j++) {
-        console.log("i is", i + " j is", j);
         if (i % j === 0) {
           isPrimeNumber = false;
         }
@@ -51,5 +50,3 @@ function printArray(arr) {
   output += `</table>`;
   document.getElementById("table").innerHTML = output;
 }
-
-//displayFirstNPrimeNumbers(Number);
